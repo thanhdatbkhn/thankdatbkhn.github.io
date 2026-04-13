@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta
+      name="description"
+      content="Landing page mobile-first cho Khoa Phẫu thuật cột sống, tối ưu cho QR card visit và liên kết nhanh."
+    />
+    <meta name="theme-color" content="#f3e1e1" />
+    <title>Khoa Phẫu thuật cột sống</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Roboto:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="background-orb orb-left" aria-hidden="true"></div>
+    <div class="background-orb orb-right" aria-hidden="true"></div>
+    <div class="background-grid" aria-hidden="true"></div>
+
+    <div class="page-shell">
+      <main class="page-main">
+        <section class="hero" id="hero">
+          <div class="hero-medallion">
+            <div class="hero-medallion-ring">
+              <div class="hero-medallion-core">
+                <div
+                  class="hero-logo-flip"
+                  id="heroLogoFlip"
+                  role="img"
+                  aria-label="Department logo"
+                >
+                  <span class="hero-medallion-face hero-medallion-face--front" aria-hidden="true">
+                    <img
+                      id="heroLogoFront"
+                      src="./logo khoa_vie.png"
+                      alt=""
+                    />
+                  </span>
+                  <span class="hero-medallion-face hero-medallion-face--back" aria-hidden="true">
+                    <img
+                      id="heroLogoBack"
+                      src="./logo khoa.png"
+                      alt=""
+                    />
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h1 class="hero-title" id="heroTitle">Khoa Phẫu thuật cột sống</h1>
+          <p class="hero-department" id="heroDepartment">
+          </p>
+          <p class="hero-department hero-department-line2" id="heroDepartmentLine2">
+          </p>
+          <p class="hero-subtitle" id="heroSubtitle">
+            Bệnh viện Đại học Y Dược - ĐHQGHN - Cơ sở Linh Đàm
+          </p>
+        </section>
+
+        <section class="links-section" aria-label="Liên kết nổi bật">
+          <div class="links-list" id="linksList"></div>
+        </section>
+
+        <section class="support-actions" aria-label="Tác vụ nhanh">
+          <button class="round-action" id="shareButton" type="button">
+            <span class="round-action-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="presentation">
+                <path
+                  d="M16 5a3 3 0 1 0 0 6 3 3 0 0 0 0-6ZM6 10a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm10 3a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"
+                  fill="currentColor"
+                />
+                <path
+                  d="m8.6 12.8 4.9-2.6m-4.9 3 5.1 2.4"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-width="1.8"
+                />
+              </svg>
+            </span>
+            <span id="shareButtonLabel">Chia sẻ</span>
+          </button>
+          <button class="round-action" id="saveContactButton" type="button">
+            <span class="round-action-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="presentation">
+                <path
+                  d="M12 12a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm-6 7.2c0-2.7 2.9-4.7 6-4.7s6 2 6 4.7"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.8"
+                />
+                <path
+                  d="M18.5 7.5h3m-1.5-1.5v3"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-width="1.8"
+                />
+              </svg>
+            </span>
+            <span id="saveContactButtonLabel">Lưu danh bạ</span>
+          </button>
+          <button class="round-action" id="emailButton" type="button" hidden>
+            <span class="round-action-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="presentation">
+                <path
+                  d="M4 7.5h16v9a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-9Z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linejoin="round"
+                  stroke-width="1.8"
+                />
+                <path
+                  d="m5 8 7 5 7-5"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.8"
+                />
+              </svg>
+            </span>
+            <span id="emailButtonLabel">Email</span>
+          </button>
+        </section>
+      </main>
+    </div>
+
+    <nav class="mobile-dock" aria-label="Liên hệ nhanh">
+      <a class="dock-button dock-button-secondary" id="phoneLink" href="tel:0364666999">
+        <span id="phoneLinkLabel">Gọi ngay</span>
+      </a>
+      <a class="dock-button dock-button-primary" id="zaloLink" href="https://zalo.me/0364666999">
+        <span id="zaloLinkLabel">Nhắn Zalo</span>
+      </a>
+      <a class="dock-button dock-button-whatsapp" id="whatsappLink" href="https://api.whatsapp.com/send?phone=84364666999" hidden>
+        <span id="whatsappLinkLabel">WhatsApp</span>
+      </a>
+    </nav>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <div class="notice-modal" id="noticeModal" aria-hidden="true">
+      <div class="notice-modal__backdrop" data-notice-close></div>
+      <div class="notice-modal__sheet" role="dialog" aria-modal="true" aria-labelledby="noticeModalTitle">
+        <button class="notice-modal__close" id="noticeCloseButton" type="button" aria-label="Đóng thông báo">
+          <svg viewBox="0 0 24 24" role="presentation">
+            <path
+              d="m6 6 12 12M18 6 6 18"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-width="2"
+            />
+          </svg>
+        </button>
+        <p class="notice-modal__eyebrow">Lưu danh bạ</p>
+        <h2 class="notice-modal__title" id="noticeModalTitle"></h2>
+        <p class="notice-modal__text" id="noticeModalText"></p>
+        <p class="notice-modal__hint" id="noticeModalHint"></p>
+        <div class="notice-modal__actions">
+          <button class="notice-modal__button notice-modal__button-secondary" id="noticeCopyButton" type="button">
+            Copy số công ty
+          </button>
+          <button class="notice-modal__button notice-modal__button-primary" id="noticeConfirmButton" type="button">
+            Đã hiểu
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="bio-modal" id="bioModal" aria-hidden="true">
+      <div class="bio-modal__backdrop" data-bio-close></div>
+      <button class="bio-modal__close" id="bioCloseButton" type="button" aria-label="Đóng tiểu sử">
+        <svg viewBox="0 0 24 24" role="presentation">
+          <path
+            d="m6 6 12 12M18 6 6 18"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-width="2"
+          />
+        </svg>
+      </button>
+      <button class="bio-modal__scroll-top" id="bioScrollTopButton" type="button" aria-label="Về đầu trang">
+        <svg viewBox="0 0 24 24" role="presentation">
+          <path
+            d="M12 18V7m0 0-4.5 4.5M12 7l4.5 4.5"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+          />
+        </svg>
+      </button>
+      <div class="bio-modal__sheet" role="dialog" aria-modal="true" aria-labelledby="bioModalTitle">
+        <div class="bio-modal__hero">
+          <img id="bioImage" src="" alt="" />
+        </div>
+
+        <div class="bio-modal__body">
+          <p class="bio-modal__eyebrow" id="bioEyebrow">Tiểu sử</p>
+          <h2 class="bio-modal__title" id="bioModalTitle"></h2>
+          <div class="bio-modal__content" id="bioContent"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./site-config.js"></script>
+    <script src="./script.js"></script>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
+
+
+
